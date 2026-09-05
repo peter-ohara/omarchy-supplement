@@ -68,15 +68,11 @@ TOOLS=(
   "stow:stow:stow:stow"
   "tmux:tmux:tmux:tmux"
   "zoxide:zoxide:zoxide:zoxide"
-  "zsh:zsh:zsh:zsh"
   # Git & CLI UI
   "delta:git-delta:git-delta:git-delta"
   "lazygit:lazygit:-:lazygit"
   "yazi:yazi:-:yazi"
   "carapace:-:-:carapace" # Ubuntu/Arch handled below
-  # Shell Plugins
-  "zsh-autosuggestions:zsh-autosuggestions:zsh-autosuggestions:zsh-autosuggestions"
-  "zsh-syntax-highlighting:zsh-syntax-highlighting:zsh-syntax-highlighting:zsh-syntax-highlighting"
   # Dependencies & Extras
   "gcc:gcc:build-essential:clang"
   "ffmpeg:ffmpeg:ffmpeg:ffmpeg"
@@ -102,16 +98,6 @@ for entry in "${TOOLS[@]}"; do
     $INSTALL_CMD "$pkg"
   fi
 done
-
-# --- 3. Shell Setup (ZSH) ---
-if [[ "$SHELL" != *"zsh"* ]]; then
-  echo "🐚 Changing shell to ZSH..."
-  if [ "$OS" == "termux" ]; then
-    chsh -s "$(which zsh)" || echo "⚠️ Failed to change shell."
-  else
-    sudo chsh -s "$(which zsh)" "$USER" || echo "⚠️ Failed to change shell automatically. Run 'chsh -s $(which zsh)' later."
-  fi
-fi
 
 # --- 4. Special Tool Installers ---
 

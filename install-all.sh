@@ -31,10 +31,6 @@ yay -S otree
 yay -S anki
 yay -S superproductivity-bin
 # Install ruby
-# Fish-like fast/unobtrusive autosuggestions for zsh
-# ./install-zsh-autosuggestions.sh
-# Fish shell like syntax highlighting for zsh
-# ./install-zsh-syntax-highlighting.sh
 # tree
 # nmap
 # xh
@@ -56,8 +52,4 @@ yay -S superproductivity-bin
 ./install-stow.sh
 ./install-dotfiles.sh
 ./install-hyprland-overrides.sh
-
-# install-zsh
-# ./install-zsh.sh
-# ./set-shell.sh
 

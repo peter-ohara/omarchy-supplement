@@ -68,7 +68,7 @@ export PATH
 # eval "$(atuin init bash)"      # needs bash-preexec
 
 
-# export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense'
+# export CARAPACE_BRIDGES='fish,bash,inshellisense'
 # source <(carapace _carapace bash)             # no zstyle equivalent in bash
 
 # ------------------------------------------------------------------------------

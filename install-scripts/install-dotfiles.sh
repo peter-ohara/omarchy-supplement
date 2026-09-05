@@ -28,7 +28,6 @@ fi
 # do      "$HOME/.config/yazi"
 # don't   "$HOME/.config/yazi/"
 declare -A CONFIGS=(
-  [zshrc]="$HOME/.zshrc"
   [ghostty]="$HOME/.config/ghostty/config"
   [nvim]="$HOME/.config/nvim $HOME/.local/share/nvim $HOME/.cache/nvim"
   [starship]="$HOME/.config/starship.toml"
